@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(153, 180, 206);
+}
+
+.container {
+  width: 500px;
+  min-height: 300px;
+  background-color: rgb(82, 226, 183);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.textfield {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.enterContent {
+  position: relative;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.enterContent input {
+  width: 90%;
+  min-height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-indent: 10px;
+  font-size: 15px;
+}
+
+.enterContent .delete {
+  position: absolute;
+  left: 92%;
+  top: 10px;
+}
+
+.enterContent .delete i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.submitContent {
+  width: 80%;
+  height: 30px;
+}
+
+.submitContent button {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 3px solid rgb(43, 131, 131);
+  border-radius: 10px;
+  background-color: rgb(89, 212, 136);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todos {
+  width: 80%;
+  min-height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todoItem {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(187, 245, 242);
+  margin-bottom: 15px;
+}
+
+.todoItem .itemContext {
+  width: 88%;
+  padding: 5px;
+}
+
+.edit {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.edit .done, .remove {
+  cursor: pointer;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.hiding {
+  background-color: red;
+}
+
+.showItems {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 3px solid rgb(43, 131, 131);
+  border-radius: 10px;
+  background-color: rgb(89, 212, 136);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .enterContent {
+    margin-bottom: 5px;
+  }
+
+  .todoItem .itemContext {
+    width: 83%;
+    font-size: 15px;
+  }
+  
+  .edit {
+    width: 17%;
+    padding: 0;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .enterContent input {
+    font-size: 12px;
+  }
+
+  .enterContent .delete {
+    font-size: 12px;
+    left: 88%;
+    top: 30%;
+  }
+
+  .enterContent .delete i {
+    font-size: 16px;
+  }
+
+  .showItems {
+    font-size: 15px;
+  }
+}
